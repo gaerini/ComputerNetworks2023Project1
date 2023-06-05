@@ -7,6 +7,40 @@
 
     <style>
         /* <Your codes here> (bonus points) */
+
+        .container {
+            width: 60vw;
+            height: 40vh;
+            margin: 0 auto;
+            padding: 5vh 0;
+            border: 1px solid grey;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .Input {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        input {
+            width:100%;
+        }
+
+        #login {
+            color: white;
+            background-color: green;
+            border: 1px solid green;
+            border-radius: 5px;
+            width: 10%;
+            padding: 2px;
+            font-size: 12px;
+        }
     </style>
 </head>
 
@@ -15,20 +49,27 @@
 
 
 <form method="POST" action="/login">
-    <h1>Login</h1>
-
-    <!-- the input box and label for user Id -->
-    <label for="userId">ID</label>
-    <input type="text" id="userId" name="userId"/>
-
-    <!-- the input box and label for user password -->
-    
-    <!-- Your codes here -->
-    <input type="password" id="userPassword" name="password"/>
-    <!-- the login button -->
-    
-    <!-- Your codes here -->
-    <button type="submit" id="login" name="login">Login</button>
+    <div class="container">
+        <h1>Login</h1>
+        <!-- the input box and label for user Id -->
+        <div class="Input">
+            <div><label for="userId">ID</label></div>
+            <input type="text" id="userId" name="userId"/>
+        </div>
+        
+        <!-- the input box and label for user password -->
+        
+        <!-- Your codes here -->
+        <div class="Input">
+            <div><label for="userPassword">PW</label></div>
+            <input type="password" id="userPassword" name="password"/>
+        </div>
+        
+        <!-- the login button -->
+        
+        <!-- Your codes here -->
+        <button type="submit" id="login" name="login">Login</button>
+    </div>
 </form>
 
 

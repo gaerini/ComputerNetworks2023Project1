@@ -7,6 +7,43 @@
 
     <style>
         /* <Your codes here> */
+        .profile {
+            width: 60vw;
+            height: 40vh;
+            margin: 0 auto;
+            padding: 5vh 0;
+            border: 1px solid grey;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .profileImg img {
+            width: 20vw;
+            border-radius: 70%;
+        }
+
+        .userName {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .studentId {
+            font-size: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            outline: none;
+            background-color: palevioletred;
+            color: white;
+            text-align: center;
+            width: 15%;
+            padding: 0.5vw;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
@@ -28,10 +65,10 @@
     <div class="profile-info">
         <!-- Your codes here -->
         <div class="userName">
-            <%=userName%>
+            NAME: <%=userName%>
         </div>
         <div class="studentId">
-            <%=studentId%>
+            STUDENT ID: <%=studentId%>
         </div>
         
     </div>
