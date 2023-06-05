@@ -140,7 +140,6 @@ app.get("/logout", (req, res) =>
 // When a GET request is received through the "/profile" path, first perform requireLogin and then run the next function.
 app.get("/profile", requireLogin, (req, res) =>
 {
-    console.log("제발")
     // Extract the current user's information from the session information.
     // Hint: Use the function of req.session.user.
     // And refer to the part "Search for a user matching userId in the test accounts list" above.
